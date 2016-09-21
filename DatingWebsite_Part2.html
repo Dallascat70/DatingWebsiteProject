@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dating Website</title>
+</head>
+<h3> Please Enter Your Details For Our Dating Website</h3>
+<style>
+
+    fieldset {
+        background:lightyellow; border: 10px solid yellow; margin-bottom:10px;
+        width: 720px;  }
+
+    label {
+        width: 180px; vertical-align:top}
+
+    label text {  display:inline-block; text-align:right; alignment:top; }
+
+
+
+    textarea {
+        width: 360px; height: 50px;
+    }
+
+    span { text-align: center
+
+    }
+
+    .range1 {
+
+    }
+
+
+
+</style>
+
+<body>
+
+<form>
+<fieldset>
+    <legend>Your Face</legend>
+    <label for="avatar">Your Image</label>
+    <input type="file" id="avatar" name="avatar" required> <br>
+    <label>Image preview</label>
+    <img id="preview" src="#">
+</fieldset>
+ <fieldset>
+
+     <legend>Your General Details</legend>
+     <label for="Name"> Name: </label> <input id="Name" type="text" required> <br>
+       <label for="Male">Gender:</label> <label for="Female"></label><input  id="Male"  type="radio">Male<input id="Female" type="radio">Female <br>
+
+
+      <label for="age">Age: </label> <input id="age" type="number" required> <br>
+      <label for="Date of birth">Date of birth:</label> <input id="Date of birth" type="date"> <br>
+      <label for="Favorite color">Favorite color:</label> <input id="Favorite color" type="color"> <br>
+      <label for="Country">Which country:</label> <select id="Country"> <option value="#"></option> <option value="US">United States</option>
+     <option value="GB">United Kingdom</option><option value="FR">France</option>
+     <option value="AU">Australia</option>
+     <option value="ZA">South Africa</option>
+
+ </select> <br>
+ </fieldset>
+
+    <fieldset>
+
+        <legend>Your Indicators</legend>
+           <label for="Height">Height:</label> <label class="range1"> Short</label><input id="Height" type="range" min="0" max="100"><label class="range2">Tall</label>
+        <br>
+
+        <label for="Salary">Salary:</label> <label class="range1">Poor</label><input id="Salary" type="range" min="0" max="100"><label class="range2">Rich</label> <br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Your Contact Information</legend>
+         <label for="Email">Email:</label> <input id="Email" type="email" required> <br>
+         <label for="Mobile">Mobile:</label> <input id="Mobile" type="tel"> <br>
+        <label for="Text Area">Address:</label> <textarea id="Text Area"></textarea> <br>
+        <label for="EmailCheck">Method to contact you:</label><input id="EmailCheck" type="checkbox">Email
+        <label for="Whatsapp"></label> <input type="checkbox" id="Whatsapp">Whatsapp
+        <label for="InAppChat"></label> <input type="checkbox" id="InAppChat">In-app chat
+    </fieldset>
+<input type="submit">
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
